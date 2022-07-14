@@ -1,6 +1,6 @@
 import { getCurrentHub } from "@sentry/core";
-import { invoke } from "@tauri-apps/api/tauri";
 import { Event, EventProcessor, Integration } from "@sentry/types";
+import { invoke } from "@tauri-apps/api/tauri";
 
 export class TauriIntegration implements Integration {
   public static id: string = "TauriIntegration";
